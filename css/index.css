@@ -1,0 +1,89 @@
+.assignment{
+    display: flex;
+    justify-content: center;
+}
+
+#myDiv {
+    width: 300px;
+    height: 100px;
+    background-color: pink;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#message_box{
+    width: 300px;
+    height: 100px;
+    background-color: pink;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messagediv{
+    width: 300px;
+    height: 100px;
+    color:black;
+    background-color: pink;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_msg{
+    display: none;
+}
+
+.err_msg{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

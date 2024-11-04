@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignement 4</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1 class="assignment">Assignment 4</h1>
+    <!--Question 1: Create a div with background color red, create buttons
+    1.a. to hide the div
+    1.b.  to change the background color of the div
+    1.c. to show your basic details on the div, the details should hide/show, on the click. -->
+    <button onclick="toggleDiv()">Hide Div</button>
+    <button onclick="changeColor()">Change Div Color</button>
+    <button onclick="toggleDetails()">Show/Hide Details</button>
+
+    <div id="myDiv">
+        <p id="details" style="display: none;">Name: Neetha Francis <br> Age: 22 <br> Address: panakkal HO</p>
+    </div>
+    <hr>
+
+
+    <div class="question_2">
+    <!-- Question 2: Create a select box with numbers 1 to 10,  when selected 9, you should change the selection 
+    to 10 and show a message that "9 is fully occupied please select another number", when selected any number
+    other than 9 it should show a message as "you selected 'particular number' " in a div, on hovering the div
+    it should change the background color of the div into a highlighting shade, while the mouse pointer leaves
+    the message area the background color should go back to as before 
+    (don't use CSS to attain the hovering functionality) -->
+        <label for="numbers">Choose A Number from 1 to 10:</label>
+        <select name="numbers" id="numbers">
+            <option value="0">Chose no</option>
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 </option>
+            <option value="6">6 </option>
+            <option value="7">7 </option>
+            <option value="8">8 </option>
+            <option value="9">9 </option>
+            <option value="10">10 </option>
+          </select>
+        <div id="message_box"></div>
+    </div>
+    <hr>
+
+
+    <div class="question_3">
+    <!-- Question 3: Consider an array with name of 10 programming languages, make 10 buttons by iterating this array,
+    when clicked on each button the name of the programming language 
+    should be shown in a corresponding div.  -->
+    <div id="buttondiv"></div>
+    <div id="messagediv"></div>
+    </div>
+    <hr>
+
+
+    <div class="question_4">
+    <!-- Make a form with fields name, phone number, place, company name, pin code
+        a. if any of the field is empty on submitting it should show corresponding error messages on below of all the required fields.
+
+        b. pin code and mobile number fields should not be submitted with non-integer values, if so, then show an error msg stating only numbers are allowed.
+
+        c. Minimum length of phone number should be 10, otherwise show corresponding error msg below the mobile no. field. 
+
+        d. On submit of the form, store the details in the local storage and clear the form. (it should stay on the same page don't refresh the page).
+
+        e. Make a prepopulate button, which when clicked will populate the form with values in the local storage if it exists, otherwise the button will be disabled.
+
+        Note: The page shouldn't refresh on submitting the form in any of the questions and show error messages below the appropriate fields only.
+ -->    <form id="detailsForm">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <p class="err_msg" id="nameError">Name is required</p>
+
+            <label for="phone">Ph No:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10" required><br>
+            <p class="err_msg" id="phoneError">Enter a valid 10-digit phone number </p>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required><br>
+            <p class="err_msg" id="placeError">Place is required</p>
+
+            <label for="cname">Company Name:</label>
+            <input type="text" id="cname" name="cname" required><br>
+            <p class="err_msg" id="companyError">Company name is required</p>
+
+            <label for="pcode">Pin code:</label>
+            <input type="text" id="pcode" name="pcode" maxlength="6" required><br>
+            <p class="err_msg" id="pincodeError">Enter a valid pin code</p>
+            <button type="submit">Submit</button>
+        </form>
+
+        <button id="prepopulateButton" disabled>Prepopulate</button>
+
+    </div>
+    <hr>
+
+    <div class="question_5">
+        <!-- Create a form with a text field which when submitted, will change the tab title to whatever is entered, limit the field to 50 characters,
+        otherwise show error message, stay on the same page when submitted(it shouldn't refresh). -->
+        <form id="formtitle">
+            <label for="titlelabel">Enter New Title:</label>
+            <input type="text" id="titleinput">
+            <button type="submit">Submit</button>
+            <p class="error_msg" id="errorMessage">Enter a title with 5 characters or less</p>
+        </form
+    </div>
+    
+
+    <div class="question_6">
+    <!--Question 6: When control+enter key is pressed show an alert message. -->
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
