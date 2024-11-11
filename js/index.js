@@ -20,12 +20,10 @@ const numbers = document.getElementById("numbers");
 const msg = document.getElementById("message_box");
 numbers.addEventListener("change", function () {
     const seledNumbers = numbers.value;
-    if (seledNumbers === '10') {
-        msg.innerHTML = `you selected ${seledNumbers}`;
-    } else if (seledNumbers == '9') {
+    if (seledNumbers == '9') {
         numbers.value = "10";
         msg.innerHTML = "9 is fully occupied, please select another number";
-    } else {
+    }else {
         msg.innerHTML = `you selected ${seledNumbers} `;
     }
 });
